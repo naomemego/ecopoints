@@ -1,0 +1,342 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins';
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* SHADOW */
+.floatie {
+  padding: 16px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.shadow {
+  box-shadow: 2px 2px 8px #b3b3b3;
+}
+
+.border {
+  border:#b3b3b3 1px solid
+}
+
+/* BUTTONS */
+.btn {
+  width: 160px;
+  background-color: #29ac60;
+  border: none;
+  border-radius: 32px;
+  color: white;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding: 8px 32px;
+}
+
+.btn:hover {
+  background-color: #0dc058;
+}
+
+.transparent {
+  background-color: transparent;
+  border: white 2px solid;
+}
+
+.trans-fill:hover {
+  background-color: #bceacf;
+}
+
+.trans-fill {
+  background-color: transparent;
+  color: #1b683b;
+  border: #29ac60 2px solid;
+}
+
+.page {
+  width: 200px;
+  height: 48px;
+  font-size: larger;
+}
+
+.full {
+  width: 100%;
+}
+
+/* NAV */
+nav {
+  position: sticky;
+  top: 0;
+  background-color: #1b683b;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  padding: 16px;
+}
+
+nav li:hover {
+  background-color: #0dc058;
+}
+
+.nav-right, .nav-left {
+  display: flex;
+  flex: 2;
+  align-items: center;
+}
+
+.nav-right {
+  justify-content: flex-end;
+  flex: 1;
+  gap: 16px;
+  margin-right: 16p;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.content {
+  margin: 32px;
+}
+
+/* HOME */
+.wrap {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin: 0 32px;
+}
+
+.wrap-left, .wrap-right {
+  flex: 1;
+}
+
+.wrap-left img {
+  width: 100%;
+}
+
+.wrap-right {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+span {
+  color: #1b683b;
+  font-weight: 900;
+}
+
+/* WASTE */
+.page-desc {
+  margin-bottom: 32px;
+}
+
+.grid {
+  display: grid;
+  /* amt of auto shows how many columns */
+  grid-template-columns: auto auto;
+  /* gap bisa 2 parameter (vertical, horizontal) */
+  gap: 16px;
+}
+
+.grid-item {
+  border: 1px solid black;
+  border-radius: 16px;
+  padding: 20px;
+  height: auto;
+  display: flex;
+  gap: 16px;
+}
+
+.grid-item img {
+  height: 100%;
+  width: 40%;
+  object-fit: cover;
+}
+
+.grid-text {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+
+.grid-text h4 {
+  text-align: right;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.grid-text > button {
+  margin-top: 8px;
+}
+
+/* VOUCHER */
+.voucher .grid-item {
+  flex-direction: column;
+}
+
+.voucher .grid-item img {
+  height: 40%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.voucher .grid-text {
+  width: 100%;
+  height: 60%;
+}
+
+/* FORUM */
+.forum-contain {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main {
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: end;
+}
+
+.forum-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.forum-header h2 {
+  font-size: 32px;
+}
+
+.account {
+  display: flex;
+  align-items: start;
+  gap: 8px;
+}
+
+.account > img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.forum-date {
+  color: #666666;
+  font-size: 12px;
+}
+
+.floatie.reply-box {
+  gap: 8px;
+}
+
+.main a:hover, aside a:hover {
+  background-color: azure;
+}
+
+.reply-box {
+  width: 900px;
+}
+
+.right {
+  display: flex;
+  justify-content: end;
+}
+
+.reply-text {
+  color: #666666;
+  font-weight: 900;
+  font-size: 12px;
+}
+
+.forum textarea {
+  border-radius: 8px;
+  padding: 8px;
+  color: #666666;
+}
+
+.reply {
+  width: calc(900px - 64px);
+}
+
+.reply-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.reply p {
+  font-size: 14px;
+}
+
+aside {
+  width: 400px;
+}
+
+.small-forum account > h3 {
+  color: #666666;
+}
+
+.small-forum .forum-date {
+  font-size: 16px;
+}
+
+aside .forum-info h2 {
+  font-size: 24px;
+}
+
+aside .account h3 {
+  color: #666;
+  font-weight: 500;
+}
+
+/* FORM */
+.register h1 {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+input[type='text'], input[type='email'], input[type='password'], input[type='number'], input[type='date'] {
+  width: 100%;
+  padding: 4px 12px;
+  border-radius: 16px;
+  border: 2px solid #b3b3b3;
+  color: #666666;
+  margin-bottom: 16px;
+}
+
+.gender {
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+input[type='submit'] {
+  margin-top: 24px;
+}
+
+/* LOGIN */
+.login h1 {
+  text-align: center;
+}
+
+/* FOOTER */
+footer {
+  padding: 16px;
+  text-align: center;
+  border-top: #1b683b 1px solid;
+}

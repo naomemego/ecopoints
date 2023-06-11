@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>EcoPoints</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../style.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    </script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <div class="nav-left">
+          <a href="../index.html"></a><li>Home</li></a>
+          <a href="../public/waste info.html"></a><li>Waste Info</li></a>
+          <a href="../public/voucher info.html"></a><li>Vouchers</li></a>
+          <a href="../public/forum.html"></a><li>Forum</li></a>
+          <a href="../public/about us.html"></a><li>About Us</li></a>
+        </div>
+        
+        <div class="nav-right">
+          <a href="../public/sign in.html"><button class="btn" id="login">Sign In</button></a>
+          <a href="../public/register.html"><button class="btn transparent" id="register">Register</button></a>
+        </div>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="content register">
+    <h1>Join the <span>EcoPoints</span> community now.</h1>
+    <div class="wrap">
+      <div class="wrap-left">
+        <img src="../assets/images/register.png" alt="">
+      </div>
+
+      <div class="wrap-right">
+        <form action="">
+          <label for="name">Full Name</label>
+          <input type="text" name="name" id="name">
+
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email">
+
+          <label for="phone">Phone Number</label>
+          <input type="number" name="phone" id="phone">
+
+          <label for="dob">Date of Birth</label>
+          <input type="date" name="dob" id="dob">
+
+          <label for="male">Gender</label>
+          <div class="gender">
+            <input type="radio" name="gender" id="male">
+            <label for="male">Male</label>
+            
+            <input type="radio" name="gender" id="female">
+            <label for="female">Female</label>
+            
+            <input type="radio" name="gender" id="other">
+            <label for="other">Other</label>
+          </div>
+
+          <label for="pass">Password</label>
+          <input type="password" name="pass" id="pass">
+
+          <label for="confirm">Confirm Password</label>
+          <input type="password" name="confirm" id="confirm">
+
+          <input type="checkbox" name="tac">
+          <label for="tac">I agree to Terms & Conditions</label>
+
+          <input type="submit" name="submit" id="submit" class="btn page full" onclick="location.href='../index.html';">
+        </form>
+      </div>
+    </div>
+
+
+  </div>
+
+  <footer>
+    <p>&copy; 2023 EcoPoints</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>EcoPoints | My Cart</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../style.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <div class="nav-left">
+          <a href="../index.html"><li>Home</li></a>
+          <a href="./waste info.html"><li>Waste Info</li></a>
+          <a href="./voucher info.html"><li>Vouchers</li></a>
+          <a href="./forum.html"><li>Forum</li></a>
+          <a href="./cart.html"><li>My Cart</li></a>
+          <a href="./about us.html"><li>About Us</li></a>
+        </div>
+        
+        <div class="nav-right">
+          <a href="./sign in.html"><button class="btn" id="login">Sign In</button></a>
+          <a href="./register.html"><button class="btn transparent" id="register">Register</button></a>
+        </div>
+      </ul>
+    </nav>
+  </header>
+  
+    <div class="content complete">
+        <div class="page-desc">
+            <h1>Rate your Pick Up experience and the Driver</h1>
+        </div>
+
+        <div class="finish floatie shadow">
+            <h2>Transaction Summary</h2>
+                <table>
+                    <tr>
+                        <th>Status:</th>
+                        <td>Completed</td>
+                    </tr>
+
+                    <tr>
+                        <th>Transaction ID:</th>
+                        <td>WT2006230001</td>
+                    </tr>
+
+                    <tr>
+                        <th>Total Waste Weight:</th>
+                        <td>3 kg</td>
+                    </tr>
+      
+                    <tr>
+                        <th>Total Points Received:</th>
+                        <td>3,600 points</td>
+                    </tr>
+                </table>
+        </div>
+
+        <div class="rating-container">
+            <div class="transaction shadow floatie">
+                <h2>Rate your transaction experience</h2>
+                <div class="rating">
+                    <img src="../assets/icons/star.png" alt="">
+                    <img src="../assets/icons/star.png" alt="">
+                    <img src="../assets/icons/star.png" alt="">
+                    <img src="../assets/icons/star.png" alt="">
+                    <img src="../assets/icons/star.png" alt="">
+                </div>
+                <textarea name="feedback" id="transaction" placeholder="Give your feedback about the transaction experience"></textarea>
+            </div>
+    
+            <div class="driver shadow floatie">
+                <h2>Rate your driver</h2>
+                <div class="rating">
+                    <img src="../assets/icons/star.png" alt="">
+                    <img src="../assets/icons/star.png" alt="">
+                    <img src="../assets/icons/star.png" alt="">
+                    <img src="../assets/icons/star.png" alt="">
+                    <img src="../assets/icons/star.png" alt="">
+                </div>
+                <textarea name="feedback" id="driver" placeholder="Give your feedback about Yosef"></textarea>
+            </div>
+        </div>
+        
+        <a href="../index.html"><button class="btn full page" id="register">Submit Rating and Feedback</button></a>
+    </div>
+
+  <footer>
+    <p>&copy; 2023 EcoPoints</p>
+  </footer>
+</body>
+</html>
